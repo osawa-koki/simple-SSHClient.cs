@@ -60,6 +60,12 @@ internal static partial class Program
     }
     PrivateKey = tmp_privateKey;
 
+    var tmp_passphrase = config["passphrase"];
+    if (tmp_passphrase != null)
+    {
+      PassPhrase = tmp_passphrase;
+    }
+
     var client = new SshClient(Host, Port, UserName, new PrivateKeyFile(PrivateKey, PassPhrase));
 
     logger.Info("接続を開始します。");
