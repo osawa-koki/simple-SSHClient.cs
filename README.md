@@ -14,6 +14,14 @@ C#で実装した簡単なSSHクライアントプログラム。
 
 Programはmutex(排他制御)を担当、MainStreamでSSHクライアントに関する処理を実行しています。  
 
+## 開発環境
+
+| module | version |
+| ---- | ---- |
+| Windows | 11 Home |
+| .NET | 7.0 |
+| C# | .NET依存 |
+
 ## 注意事項
 
 > **Warning**  
